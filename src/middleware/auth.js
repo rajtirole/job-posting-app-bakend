@@ -2,6 +2,7 @@ import { config }from 'dotenv'
 config()
 import jwt from 'jsonwebtoken'
 async function auth(req,res,next){
+    console.log(req);
     const token=req.cookies.token;
     console.log(token);
     try {
